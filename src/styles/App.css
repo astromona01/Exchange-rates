@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+}
+
+.global-mask {
+  background: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0.3;
+  display: none;
+}
+
+ul {
+  width: 400px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 16px 20px;
+  background: aliceblue;
+  border-radius: 0.2em;
+  position: relative;
+  transition: all 0.2s;
+}
+li:hover {
+  background: mediumspringgreen;
+}
+li div:nth-last-child(-n+2) {
+  width: 21%;
+}
+li div {
+  cursor: default;
+}
+
+.stat-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  width: 91%;
+}
+
+.statistic-list {
+  width: 30%;
+  background: aquamarine;
+  left: 30%;
+  top: 10%;
+  position: fixed;
+  z-index: 10;
+  border-radius: 0.2em;
+  transition: all 0.2s;
+  display: none;
+}
+
+.stat-list-head {
+  text-align: center;
+  background: antiquewhite;
+}
+.stat-list-head svg {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.list-item-wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  padding: 0 5px 2px;
+  background: black;
+  color: #fff;
+  border-radius: 0.2em;
+  display: none;
+  z-index: 5;
+}
+.tooltip:before {
+  border-color: transparent #000 transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.visible-mask, .visible-list {
+  display: block;
+}
+
+/*# sourceMappingURL=App.css.map */
